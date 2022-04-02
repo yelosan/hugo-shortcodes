@@ -1,3 +1,3 @@
-module github.com/YourOnly-One/hugo-shortcodes
+module gitlab.com/yelosan/hugo-shortcodes
 
-go 1.17
+go 1.18
