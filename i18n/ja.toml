@@ -1,0 +1,79 @@
+# Translations for Nihongo (Japanese)
+# https://gohugo.io/content-management/multilingual/#translation-of-strings
+
+# BGN: Date and Time Formats
+  [datetimelongtzd]
+    other = "2006年1月2日 15時04分05秒 -0700"
+  [datetimelongtzn]
+    other = "2006年1月2日 15時04分05秒 MST"
+  [datetimetzd]
+    other = "2006年1月2日 15時04分 -0700"
+  [datetimetzn]
+    other = "2006年1月2日 15時04分 MST"
+  [dateonly]
+    other = "2006年1月2日"
+  [timelongtzd]
+    other = "15時04分05秒 -0700"
+  [timelongtzn]
+    other = "15時04分05秒 MST"
+  [timetzd]
+    other = "15時04分 -0700"
+  [timetzn]
+    other = "15時04分 MST"
+# END: Date and Time Formats
+
+# BGN: attribution and license
+  [attribution_by]
+    other = "沿って"
+  [attribution_licensedunder]
+    other = "の下で認可された"
+  [attribution_cc0_extent]
+    other = "法律の下で可能な範囲で"
+  [attribution_cc0_waived]
+    other = "すべての著作権および関連する権利または隣接権を放棄しました"
+  [attribution_cc0_publishedfrom]
+    other = "この作品はから公開されています"
+  [attribution_publicdomain]
+    other = "既知の著作権制限なし"
+  [attribution_allrightsreserved]
+    other = "上記の作品は著作権で保護されています"
+  [attribution_allrightsreservedcover]
+    other = "この記事で使用されている表紙の画像は著作権で保護されています"
+  [attribution_ccbysa4]
+    other = "クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス"
+  [attribution_directedby]
+    other = "監督"
+  [attribution_musicby]
+    other = "による音楽"
+# END: attribution and license
+
+# BGN: phrases
+  [viewlargermap]
+    other = "大きな地図を見る"
+# END: phrases
+
+# BGN: generic words
+  [word_is]
+    other = "です"
+  [word_has]
+    other = "持っている"
+  [word_to]
+    other = "に"
+  [word_coverimage]
+    other = "・ 表紙画像："
+  [word_date]
+    other = "日にち"
+  [word_time]
+    other = "時間"
+  [word_location]
+    other = "場所"
+# END: generic words
+
+# BGN: punctuations
+  [punctuation_colon]
+    other = "："
+  [punctuation_fullstop]
+    other = "。"
+  [punctuation_pause]
+    other = "、"
+# END: punctuations

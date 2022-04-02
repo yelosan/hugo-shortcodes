@@ -1,0 +1,16 @@
+{{- /* HOW TO USE
+  Code: {{< reflangtitle path="" lang="" >}}
+
+  Purpose:
+    1. ref shortcode that generates an HTML link
+    2. ref shortcode that pulls the correct language title
+*/ -}}
+{{- $path := .Get "path" -}}
+{{- $ref := relref . .Params -}}
+{{- with .Site.GetPage $path -}}
+  {{- range .AllTranslations -}}
+    {{ if eq $ref .RelPermalink }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ break }}{{ end }}
+  {{- else -}}
+    {{ if eq $ref .RelPermalink }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+  {{- end -}}
+{{- end -}}

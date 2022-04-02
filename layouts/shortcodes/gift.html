@@ -1,0 +1,15 @@
+{{ $type := .Get "type" }}
+<h2>{{ $type | humanize }}</h2>
+{{ with .Get "message" }}{{ . | safeHTML }}{{ end }}
+<div id="send_a_gift" class="gift">
+  <ul>
+    {{ range $i, $m := .Site.Data.persons.yuki.author.gift }}
+      {{ if eq $type $m.type }}
+        <li>{{ .name }}: {{ with .url }}<a href="{{ . }}" title="{{ . }}" rel="me noopener external">{{ with $m.linktitle }}{{ . }}{{ else }}{{ . }}{{ end }}</a>{{ else }}{{ .code }}
+          {{ with .tag }}<ul><li>tag/memo: {{ . }}</li></ul>{{ end }}{{ end }}
+          {{ with .message }}<p>{{ . }}</p>{{ end }}
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+</div>

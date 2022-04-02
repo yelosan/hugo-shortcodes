@@ -1,0 +1,11 @@
+{{- /* HOW TO USE
+{{< map src="" link="" >}}
+*/ -}}
+<div class="obj_center">
+  <figure class="figure_box txt_center" style="width: auto;">
+    <div class="responsive_embedframe"><iframe src="{{ .Get "src" }}"></iframe></div>
+    <figcaption class="attribution_caption">
+      <p><a href="{{ .Get "link" }}">{{ i18n "viewlargermap" }}</a></p>
+    </figcaption>
+  </figure>
+</div>

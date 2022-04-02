@@ -1,0 +1,79 @@
+# Translations for Hangugeo (Korean)
+# https://gohugo.io/content-management/multilingual/#translation-of-strings
+
+# BGN: Date and Time Formats
+  [datetimelongtzd]
+    other = "2006년 01월 02일 15시 04분 05초 -0700"
+  [datetimelongtzn]
+    other = "2006년 01월 02일 15시 04분 05초 MST"
+  [datetimetzd]
+    other = "2006년 01월 02일 15시 04분 -0700"
+  [datetimetzn]
+    other = "2006년 01월 02일 15시 04분 MST"
+  [dateonly]
+    other = "2006년 01월 02일"
+  [timelongtzd]
+    other = "15시 04분 05초 -0700"
+  [timelongtzn]
+    other = "15시 04분 05초 MST"
+  [timetzd]
+    other = "15시 04분 -0700"
+  [timetzn]
+    other = "15시 04분 MST"
+# END: Date and Time Formats
+
+# BGN: attribution and license
+  [attribution_by]
+    other = "으로"
+  [attribution_licensedunder]
+    other = "라이센스"
+  [attribution_cc0_extent]
+    other = "법에 따라 가능한 한"
+  [attribution_cc0_waived]
+    other = "모든 저작권 및 관련 또는 이웃 권리를 포기했습니다"
+  [attribution_cc0_publishedfrom]
+    other = "이 작품은"
+  [attribution_publicdomain]
+    other = "알려진 저작권 제한 없음"
+  [attribution_allrightsreserved]
+    other = "위에 표시된 작업은 저작권이 있습니다"
+  [attribution_allrightsreservedcover]
+    other = "이 기사에 사용 된 표지 이미지는 저작권으로 보호됩니다"
+  [attribution_ccbysa4]
+    other = "크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 국제 라이선스"
+  [attribution_directedby]
+    other = "감독"
+  [attribution_musicby]
+    other = "음악"
+# END: attribution and license
+
+# BGN: phrases
+  [viewlargermap]
+    other = "더 큰 지도 보기"
+# END: phrases
+
+# BGN: generic words
+  [word_is]
+    other = "이다"
+  [word_has]
+    other = "있다"
+  [word_to]
+    other = "에"
+  [word_coverimage]
+    other = "・ 표지 이미지 :"
+  [word_date]
+    other = "날짜"
+  [word_time]
+    other = "시간"
+  [word_location]
+    other = "소재지"
+# END: generic words
+
+# BGN: punctuations
+  [punctuation_colon]
+    other = ":"
+  [punctuation_fullstop]
+    other = "."
+  [punctuation_pause]
+    other = ","
+# END: punctuations
