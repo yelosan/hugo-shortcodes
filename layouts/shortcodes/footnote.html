@@ -1,0 +1,6 @@
+{{- /* HOW TO USE
+{{% footnote id="" num="" %}}
+*/ -}}
+{{- $id := .Get "id" -}}
+{{- $num := .Get "num" -}}
+<sup id="fnref:{{ $id }}"><a href="#fn:{{ $id }}" class="footnote-ref" role="doc-noteref">{{ $num }}</a></sup>

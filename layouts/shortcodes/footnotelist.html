@@ -1,0 +1,12 @@
+{{- /* HOW TO USE
+{{% footnotelist %}}
+{{% footnotecite id="" sourceurl="" sourcetitle="" %}}
+{{% footnotecite id="" sourceurl="" sourcetitle="" %}}
+{{% /footnotelist %}}
+*/ -}}
+<section class="footnotes" role="doc-endnotes">
+  <hr/>
+  <ol>
+    {{ .Inner }}
+  </ol>
+</section>

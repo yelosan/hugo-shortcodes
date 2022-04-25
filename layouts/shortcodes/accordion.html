@@ -1,0 +1,14 @@
+{{- /* HOW TO USE
+{{< accordion summary="" status="open" class="faq" >}}
+content
+{{< /accordion >}}
+*/ -}}
+{{- $status := .Get "status" -}}
+{{- $summary := .Get "summary" -}}
+{{- $content := trim .Inner "\n" -}}
+{{- $class := .Get "class" -}}
+<details{{ with $summary }} id="{{ . | urlize }}"{{ end }}{{ with eq $status "open" }} open{{ end }}>
+{{- /* NOTE: $content is inside a DIV to allow separate styling of $summary and $content. */ -}}
+{{ with $summary }}<summary{{ with $class }} class="{{ . }}"{{ end }}>{{ . | $.Page.RenderString }}</summary>{{ else }}{{ warnf "Missing summary in %s" .Position }}{{ end }}
+{{ with $content }}<div{{ with $class }} class="{{ . }}"{{ end }}>{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ else }}{{ warnf "Missing content in %s" .Position }}{{ end }}
+</details>
