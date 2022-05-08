@@ -1,6 +1,8 @@
 {{ $id := .Get 0 }}
 {{ $hideCaption := cond (eq (.Get 1) "hidecaption") "1" "0" }}
 
+{{- /* NOTE: no longer working, Instagram changed their embed code again */ -}}
+
 {{ if not .Site.IsServer }}
   {{ with getJSON "https://api.instagram.com/oembed/?url=https://www.instagram.com/p/" $id "/&hidecaption=" $hideCaption }}
     {{ .html | safeHTML }}
@@ -8,13 +10,13 @@
 {{ else }}
   <style>
     .instagram-embed-placeholder {
-      display: flex; 
-      align-items: center; 
+      display: flex;
+      align-items: center;
       justify-content: center;
-      gap: .5em; 
-      border: 2px dashed silver; 
-      height: 360px; 
-      margin: 2em 0; 
+      gap: .5em;
+      border: 2px dashed silver;
+      height: 360px;
+      margin: 2em 0;
       border-radius: 8px;
     }
   </style>
