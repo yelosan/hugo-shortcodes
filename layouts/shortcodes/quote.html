@@ -1,0 +1,27 @@
+{{- /* HOW TO USE
+{{% quote type="quote_name|quote_title|quote_work" lang="" %}}content{{% /quote %}}
+*/ -}}
+{{- /* NOTE:
+  quote_name: channel names, TV network name, brand/company names, author names, band names, singer names
+              first letter always capitalised
+
+  quote_title:  movies, televisions, radio shows, books, periodicals, databases, websites
+                in old print: underline
+                in English: italicized
+    - Chinese: 《…〈…〉…》
+    - Japanese: 《…〈…〉…》
+
+  quote_work: episode, articles, essays, chapters, poems, songs, speeches
+    - Chinese: 「…『…』…」
+    - Japanese: 「…『…』…」
+    - South Korean (usually for vertical only): 「…『…』…」
+*/ -}}
+{{- $type := .Get "type" -}}
+{{- $lang := .Get "lang" -}}
+{{- if eq $type "name" -}}
+  <span class="quote_name"><bdi{{ with $lang }} lang="{{ . }}"{{ end }}>{{ .Inner }}</bdi></span>
+{{- else if eq $type "title" -}}
+  <cite class="quote_title"><bdi{{ with $lang }} lang="{{ . }}"{{ end }}>{{ .Inner }}</bdi></cite>
+{{- else if eq $type "work" -}}
+  <q class="quote_work"><bdi{{ with $lang }} lang="{{ . }}"{{ end }}>{{ .Inner }}</bdi></q>
+{{- end -}}
