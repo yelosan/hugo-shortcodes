@@ -15,9 +15,14 @@
 vendor
 
 # Hugo
+config/development
+config/staging
 public
 resources
 _vendor
+.hugo_build.lock
+#go.mod
+go.sum
 
 # OS files
 .DS_Store
@@ -30,6 +35,3 @@ cache
 
 # npm
 node_modules
-
-# project
-jsconfig.json
