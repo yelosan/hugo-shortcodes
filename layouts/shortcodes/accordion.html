@@ -10,7 +10,7 @@ content
 {{- $class := .Get "class" -}}
 {{- $id := .Get "id" -}}
 <details{{ with $summary }} id="{{ or $id . | urlize }}"{{ end }}{{ with $border }} class="{{ . }}"{{ end }}{{ with eq $status "open" }} open{{ end }}>
-{{- /* NOTE: $content is inside a DIV to allow separate styling of $summary and $content. */ -}}
-{{ with $summary }}<summary{{ with $class }} class="{{ . }}"{{ end }}>{{ . | $.Page.RenderString }}</summary>{{ else }}{{ warnf "Missing summary in %s" .Position }}{{ end }}
-{{ with $content }}<div{{ with $class }} class="{{ . }}"{{ end }}>{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ else }}{{ warnf "Missing content in %s" .Position }}{{ end }}
+  {{- /* NOTE: $content is inside a DIV to allow separate styling of $summary and $content. */ -}}
+  {{- with $summary -}}<summary{{ with $class }} class="{{ . }}"{{ end }}>{{ . | $.Page.RenderString }}</summary>{{ else }}{{ warnf "Missing summary in %s" .Position }}{{- end -}}
+  {{- with $content -}}<div{{ with $class }} class="{{ . }}"{{ end }}>{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ else }}{{ warnf "Missing content in %s" .Position }}{{- end -}}
 </details>

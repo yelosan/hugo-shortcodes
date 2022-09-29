@@ -1,14 +1,11 @@
 {{- /* HOW TO USE
-
 {{% quotebox boxstyle="qbs_generic" qmarkstyle="qbm_doublequotationmark" boxcolour="qbc_blue" attribalign="txt_right" srctitle="" srclink="" srcrel="noopener external" attribto="" attriblink="" attribrel="noopener external" %}}
   content
 {{% /quotebox %}}
-
 */ -}}
-
 <figure class="quote_box {{ with .Get "boxstyle" }}{{ . }}{{ end }} {{ with .Get "boxcolour" }}{{ . }}{{ end }}">
   <blockquote class="{{ with .Get "qmarkstyle" }}{{ . }}{{ end }}"{{ with .Get "srclink" }} cite="{{ . }}"{{ end }}>
-    {{ .Inner | markdownify }}
+    {{- .Inner | markdownify -}}
   </blockquote>
   {{ if or ( .Get "attribto" ) ( .Get "srctitle" ) }}
   <figcaption class="attribution_name {{ with .Get "attribalign" }}{{ . }}{{ end }}">
