@@ -3,7 +3,7 @@
 */ -}}
 <div class="obj_center">
   <figure class="figure_box txt_center" style="width: auto;">
-    <div class="responsive_embedframe"><iframe src="{{ .Get "src" }}" frameborder="0"></iframe></div>
+    <div class="responsive_embedframe"><iframe anonymous src="{{ .Get "src" }}" frameborder="0"></iframe></div>
     {{ with (.Get "link") }}
     <figcaption class="attribution_caption">
       <p><a href="{{ .Get "link" }}">{{ i18n "viewlargermap" }}</a></p>
