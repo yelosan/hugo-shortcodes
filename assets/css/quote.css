@@ -24,8 +24,8 @@
   /* PILIPINO and PHILIPPINE ENGLISH */
   :lang(en-PH) cite.quote_title, :lang(en-PH-oxendict) cite.quote_title,
   :lang(phi) cite.quote_title, :lang(fil) cite.quote_title,
-  :lang(tbw) cite.quote_title, :lang(bku) cite.quote_title, :lang(hnn) cite.quote_title, :lang(tl) cite.quote_title, :lang(tgl) cite.quote_title,
-  :lang(tbw-Tagb) cite.quote_title, :lang(bku-Buhd) cite.quote_title, :lang(hnn-Hano) cite.quote_title, :lang(tl-Tglg) cite.quote_title, :lang(tgl-Tglg) cite.quote_title {
+  :lang(tbw) cite.quote_title, :lang(bku) cite.quote_title, :lang(hnn) cite.quote_title, :lang(tl) cite.quote_title,
+  :lang(tbw-Tagb) cite.quote_title, :lang(bku-Buhd) cite.quote_title, :lang(hnn-Hano) cite.quote_title, :lang(tl-Tglg) cite.quote_title {
     /* quotes: "«" "»" "‹" "›"; */
     quotes: "\00AB" "\00BB" "\2039" "\203A";
   }
@@ -71,8 +71,8 @@
   /* PILIPINO and PHILIPPINE ENGLISH */
   :lang(en-PH) q.quote_work, :lang(en-PH-oxendict) q.quote_work,
   :lang(phi) q.quote_work, :lang(fil) q.quote_work,
-  :lang(tbw) q.quote_work, :lang(bku) q.quote_work, :lang(hnn) q.quote_work, :lang(tl) q.quote_work, :lang(tgl) q.quote_work,
-  :lang(tbw-Tagb) q.quote_work, :lang(bku-Buhd) q.quote_work, :lang(hnn-Hano) q.quote_work, :lang(tl-Tglg) q.quote_work, :lang(tgl-Tglg) q.quote_work {
+  :lang(tbw) q.quote_work, :lang(bku) q.quote_work, :lang(hnn) q.quote_work, :lang(tl) q.quote_work,
+  :lang(tbw-Tagb) q.quote_work, :lang(bku-Buhd) q.quote_work, :lang(hnn-Hano) q.quote_work, :lang(tl-Tglg) q.quote_work {
     /* quotes: "｢" "｣" "⌜" "⌟"; */
     quotes: "\FF62" "\FF63" "\231C" "\231F";
   }
@@ -127,8 +127,8 @@
 :lang(ko) cite.quote_title::before,
 :lang(ko-Latn) cite.quote_title::before,
 :lang(phi) cite.quote_title::before, :lang(fil) cite.quote_title::before,
-:lang(tbw) cite.quote_title::before, :lang(bku) cite.quote_title::before, :lang(hnn) cite.quote_title::before, :lang(tl) cite.quote_title::before, :lang(tgl) cite.quote_title::before,
-:lang(tbw-Tagb) cite.quote_title::before, :lang(bku-Buhd) cite.quote_title::before, :lang(hnn-Hano) cite.quote_title::before, :lang(tl-Tglg) cite.quote_title::before, :lang(tgl-Tglg) cite.quote_title::before,
+:lang(tbw) cite.quote_title::before, :lang(bku) cite.quote_title::before, :lang(hnn) cite.quote_title::before, :lang(tl) cite.quote_title::before,
+:lang(tbw-Tagb) cite.quote_title::before, :lang(bku-Buhd) cite.quote_title::before, :lang(hnn-Hano) cite.quote_title::before, :lang(tl-Tglg) cite.quote_title::before,
 :lang(en-PH) q.quote_work::before, :lang(en-PH-oxendict) q.quote_work::before,
 :lang(zh-Hans) q.quote_work::before,
 :lang(zh) q.quote_work::before,
@@ -146,8 +146,8 @@
 :lang(ko) q.quote_work::before,
 :lang(ko-Latn) q.quote_work::before,
 :lang(phi) q.quote_work::before, :lang(fil) q.quote_work::before,
-:lang(tbw) q.quote_work::before, :lang(bku) q.quote_work::before, :lang(hnn) q.quote_work::before, :lang(tl) q.quote_work::before, :lang(tgl) q.quote_work::before,
-:lang(tbw-Tagb) q.quote_work::before, :lang(bku-Buhd) q.quote_work::before, :lang(hnn-Hano) q.quote_work::before, :lang(tl-Tglg) q.quote_work::before, :lang(tgl-Tglg) q.quote_work::before {
+:lang(tbw) q.quote_work::before, :lang(bku) q.quote_work::before, :lang(hnn) q.quote_work::before, :lang(tl) q.quote_work::before,
+:lang(tbw-Tagb) q.quote_work::before, :lang(bku-Buhd) q.quote_work::before, :lang(hnn-Hano) q.quote_work::before, :lang(tl-Tglg) q.quote_work::before {
   content: open-quote;
 }
 
@@ -168,8 +168,8 @@
 :lang(ko) cite.quote_title::after,
 :lang(ko-Latn) cite.quote_title::after,
 :lang(phi) cite.quote_title::after, :lang(fil) cite.quote_title::after,
-:lang(tbw) cite.quote_title::after, :lang(bku) cite.quote_title::after, :lang(hnn) cite.quote_title::after, :lang(tl) cite.quote_title::after, :lang(tgl) cite.quote_title::after,
-:lang(tbw-Tagb) cite.quote_title::after, :lang(bku-Buhd) cite.quote_title::after, :lang(hnn-Hano) cite.quote_title::after, :lang(tl-Tglg) cite.quote_title::after, :lang(tgl-Tglg) cite.quote_title::after,
+:lang(tbw) cite.quote_title::after, :lang(bku) cite.quote_title::after, :lang(hnn) cite.quote_title::after, :lang(tl) cite.quote_title::after,
+:lang(tbw-Tagb) cite.quote_title::after, :lang(bku-Buhd) cite.quote_title::after, :lang(hnn-Hano) cite.quote_title::after, :lang(tl-Tglg) cite.quote_title::after,
 :lang(en-PH) q.quote_work::after, :lang(en-PH-oxendict) q.quote_work::after,
 :lang(zh-Hans) q.quote_work::after,
 :lang(zh) q.quote_work::after,
@@ -187,7 +187,7 @@
 :lang(ko) q.quote_work::after,
 :lang(ko-Latn) q.quote_work::after,
 :lang(phi) q.quote_work::after, :lang(fil) q.quote_work::after,
-:lang(tbw) q.quote_work::after, :lang(bku) q.quote_work::after, :lang(hnn) q.quote_work::after, :lang(tl) q.quote_work::after, :lang(tgl) q.quote_work::after,
-:lang(tbw-Tagb) q.quote_work::after, :lang(bku-Buhd) q.quote_work::after, :lang(hnn-Hano) q.quote_work::after, :lang(tl-Tglg) q.quote_work::after, :lang(tgl-Tglg) q.quote_work::after {
+:lang(tbw) q.quote_work::after, :lang(bku) q.quote_work::after, :lang(hnn) q.quote_work::after, :lang(tl) q.quote_work::after,
+:lang(tbw-Tagb) q.quote_work::after, :lang(bku-Buhd) q.quote_work::after, :lang(hnn-Hano) q.quote_work::after, :lang(tl-Tglg) q.quote_work::after {
   content: close-quote;
 }
