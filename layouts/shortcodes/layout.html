@@ -1,0 +1,27 @@
+{{- /*
+  References:
+    - https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout
+
+  Supported in this shortcode:
+    1. flexbox
+
+  TODO:
+    - Grid
+*/ -}}
+{{- /*
+  Required child shortcode:
+    layoutitem
+*/ -}}
+{{- /* HOW TO
+  {{% layout type="" %}}
+    {{% layoutitem style="" %}}
+      CONTENT
+    {{% /layoutitem %}}
+    {{< layoutitem style="" >}}
+      CONTENT
+    {{< /layoutitem >}}
+  {{% /layout %}}
+*/ -}}
+{{- $type := .Get "type" -}}
+{{- $style := .Get "style" | safeCSS -}}
+<div class="yelosan---{{ $type }}"{{ with $style }} style="{{ . }}"{{ end }}>{{- .InnerDeindent -}}</div>

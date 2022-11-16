@@ -1,0 +1,29 @@
+/*********************
+** BGN: Flex layout **
+*********************/
+  .yelosan---flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+
+    .yelosan---flex__content {
+      align-self: auto;
+      height: 100%;
+      width: 100%;
+    }
+  }
+/*********************
+** END: Flex layout **
+*********************/
+
+/*********************
+** BGN: Grid layout **
+*********************/
+/* TODO */
+/*********************
+** END: Grid layout **
+*********************/
