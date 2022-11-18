@@ -4,7 +4,7 @@ A collection of custom shortcodes used in [YourOnly.One](https://YourOnly.One) a
 
 ## Repository, suggestions, issues, pull requests
 
-We use [Codeberg](https://codeberg.org/yelosan/hugo-feeds) for development, suggestions, issues, and pull requests.
+We use [Codeberg](https://codeberg.org/yelosan/hugo-shortcodes) for development, suggestions, issues, and pull requests.
 
 ### Mirrors
 
