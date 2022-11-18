@@ -1,3 +1,3 @@
-module gitlab.com/yelosan/hugo-shortcodes
+module codeberg.org/yelosan/hugo-shortcodes
 
 go 1.19

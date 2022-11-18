@@ -3,11 +3,11 @@
 
 name = "YourOnly.One Shortcodes for Hugo"
 license = "MIT"
-licenselink = "https://github.com/YourOnly-One/hugo-shortcodes/blob/master/LICENSE"
+licenselink = "https://codeberg.org/yelosan/hugo-shortcodes/src/branch/main/LICENSE"
 description = "Hugo shortcodes used by and in YourOnly.One."
 
 # The home page of the theme, where the source can be found.
-homepage = "https://github.com/techmagus/hugo-shortcodes"
+homepage = "https://codeberg.org/yelosan/hugo-shortcodes"
 
 # If you have a running demo of the theme.
 #demosite = "https://gohugo.io"
@@ -23,8 +23,8 @@ features = ["image", "instagram", "music", "quotebox", "scribd", "youtube"]
 
 # If the theme has a single author
 [author]
-  name = "YourOnly.One"
-  homepage = "https://YourOnly.One"
+  name = "techmagus ― I'M YourOnly.One"
+  homepage = "https://youronly.one"
 
 # If porting an existing theme
 #[original]
