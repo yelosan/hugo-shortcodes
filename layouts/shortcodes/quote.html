@@ -21,9 +21,9 @@
 {{- $type := .Get "type" -}}
 {{- $lang := .Get "lang" -}}
 {{- if eq $type "name" -}}
-  <span class="quote_name"><bdi{{ with $lang }} lang="{{ . }}"{{ end }}>{{ .Inner }}</bdi></span>
+  <span class="quote_name" translate="no"><bdi{{ with $lang }} lang="{{ . }}"{{ end }}>{{ .Inner }}</bdi></span>
 {{- else if eq $type "title" -}}
-  <cite class="quote_title"><bdi{{ with $lang }} lang="{{ . }}"{{ end }}>{{ .Inner }}</bdi></cite>
+  <cite class="quote_title" translate="no"><bdi{{ with $lang }} lang="{{ . }}"{{ end }}>{{ .Inner }}</bdi></cite>
 {{- else if eq $type "work" -}}
-  <q class="quote_work"><bdi{{ with $lang }} lang="{{ . }}"{{ end }}>{{ .Inner }}</bdi></q>
+  <q class="quote_work" translate="no"><bdi{{ with $lang }} lang="{{ . }}"{{ end }}>{{ .Inner }}</bdi></q>
 {{- end -}}
