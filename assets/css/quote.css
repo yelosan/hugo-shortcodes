@@ -22,42 +22,38 @@
     /* new style: italicized */
 
   /* PILIPINO and PHILIPPINE ENGLISH */
-  :lang(en-PH) cite.quote_title, :lang(en-PH-oxendict) cite.quote_title,
+  :lang(en-PH) cite.quote_title,
   :lang(phi) cite.quote_title, :lang(fil) cite.quote_title,
-  :lang(tbw) cite.quote_title, :lang(bku) cite.quote_title, :lang(hnn) cite.quote_title, :lang(tl) cite.quote_title,
-  :lang(tbw-Tagb) cite.quote_title, :lang(bku-Buhd) cite.quote_title, :lang(hnn-Hano) cite.quote_title, :lang(tl-Tglg) cite.quote_title {
+  :lang(tbw) cite.quote_title, :lang(bku) cite.quote_title, :lang(hnn) cite.quote_title, :lang(tgl) cite.quote_title, :lang(tl) cite.quote_title
+  {
     /* quotes: "«" "»" "‹" "›"; */
     quotes: "\00AB" "\00BB" "\2039" "\203A";
+    font-style: normal;
   }
 
   /* CHINESE */
-  :lang(zh-Hans) cite.quote_title,
   :lang(zh) cite.quote_title,
-  :lang(zh-Hant) cite.quote_title,
-  :lang(zh-Hans-HK) cite.quote_title,
-  :lang(zh-Hant-HK) cite.quote_title,
-  :lang(zh-Latn) cite.quote_title, :lang(zh-Latn-pinyin) cite.quote_title,
-  :lang(yue-jyutping) cite.quote_title, :lang(zh-yue-jyutping) cite.quote_title,
-  :lang(zh-Latn-tongyong) cite.quote_title,
-  :lang(zh-Latn-wadegile) cite.quote_title {
+  :lang(yue) cite.quote_title
+  {
     /* quotes: "《" "》" "〈" "〉"; */
     quotes: "\300A" "\300B" "\3008" "\3009";
+    font-style: normal;
   }
 
   /* JAPANESE */
-  :lang(ja) cite.quote_title,
-  :lang(ja-Latn) cite.quote_title, :lang(ja-Latn-hepburn) cite.quote_title,
-  :lang(ja-Latn-hepburn-heploc) cite.quote_title, :lang(ja-Latn-heploc) cite.quote_title,
-  :lang(ja-Latn-hepburn-alalc97) cite.quote_title, :lang(ja-Latn-alalc97) cite.quote_title {
+  :lang(ja) cite.quote_title
+  {
     /* quotes: "《" "》" "〈" "〉"; */
     quotes: "\300A" "\300B" "\3008" "\3009";
+    font-style: normal;
   }
 
   /* KOREAN */
-  :lang(ko) cite.quote_title,
-  :lang(ko-Latn) cite.quote_title {
+  :lang(ko) cite.quote_title
+  {
     /* quotes: "《" "》" "〈" "〉"; */
     quotes: "\300A" "\300B" "\3008" "\3009";
+    font-style: normal;
   }
 /*********************
 ** END: quote_title **
@@ -69,125 +65,82 @@
   /* episodes, articles, essays, chapters, poems, songs, speeches */
 
   /* PILIPINO and PHILIPPINE ENGLISH */
-  :lang(en-PH) q.quote_work, :lang(en-PH-oxendict) q.quote_work,
+  :lang(en-PH) q.quote_work,
   :lang(phi) q.quote_work, :lang(fil) q.quote_work,
-  :lang(tbw) q.quote_work, :lang(bku) q.quote_work, :lang(hnn) q.quote_work, :lang(tl) q.quote_work,
-  :lang(tbw-Tagb) q.quote_work, :lang(bku-Buhd) q.quote_work, :lang(hnn-Hano) q.quote_work, :lang(tl-Tglg) q.quote_work {
+  :lang(tbw) q.quote_work, :lang(bku) q.quote_work, :lang(hnn) q.quote_work, :lang(tgl) q.quote_work, :lang(tl) q.quote_work
+  {
     /* quotes: "｢" "｣" "⌜" "⌟"; */
     quotes: "\FF62" "\FF63" "\231C" "\231F";
+    font-style: normal;
   }
 
   /* CHINESE */
-  :lang(zh-Hans) q.quote_work,
   :lang(zh) q.quote_work,
-  :lang(zh-Hant) q.quote_work,
-  :lang(zh-Hans-HK) q.quote_work,
-  :lang(zh-Hant-HK) q.quote_work,
-  :lang(zh-Latn) q.quote_work, :lang(zh-Latn-pinyin) q.quote_work,
-  :lang(yue-jyutping) q, :lang(zh-yue-jyutping) q.quote_work,
-  :lang(zh-Latn-tongyong) q.quote_work,
-  :lang(zh-Latn-wadegile) q.quote_work {
+  :lang(yue) q.quote_work
+  {
     /* quotes: "「" "」" "『" "』"; */
     quotes: "\300C" "\300D" "\300E" "\300F";
+    font-style: normal;
   }
 
   /* JAPANESE */
-  :lang(ja) q.quote_work,
-  :lang(ja-Latn) q.quote_work, :lang(ja-Latn-hepburn) q.quote_work,
-  :lang(ja-Latn-hepburn-heploc) q.quote_work, :lang(ja-Latn-heploc) q.quote_work,
-  :lang(ja-Latn-hepburn-alalc97) q.quote_work, :lang(ja-Latn-alalc97) q.quote_work {
+  :lang(ja) q.quote_work
+  {
     /* quotes: "「" "」" "『" "』"; */
     quotes: "\300C" "\300D" "\300E" "\300F";
+    font-style: normal;
   }
 
   /* KOREAN */
-  :lang(ko) q.quote_work,
-  :lang(ko-Latn) q.quote_work {
+  :lang(ko) q.quote_work
+  {
     /* quotes: "「" "」" "『" "』"; */
     quotes: "\300C" "\300D" "\300E" "\300F";
+    font-style: normal;
   }
 /********************
 ** END: quote_work **
 ********************/
 
-:lang(en-PH) cite.quote_title::before, :lang(en-PH-oxendict) cite.quote_title::before,
-:lang(zh-Hans) cite.quote_title::before,
+:lang(en-PH) cite.quote_title::before,
 :lang(zh) cite.quote_title::before,
-:lang(zh-Hant) cite.quote_title::before,
-:lang(zh-Hans-HK) cite.quote_title::before,
-:lang(zh-Hant-HK) cite.quote_title::before,
-:lang(zh-Latn) cite.quote_title::before, :lang(zh-Latn-pinyin) cite.quote_title::before,
-:lang(yue-jyutping) cite.quote_title::before, :lang(zh-yue-jyutping) cite.quote_title::before,
-:lang(zh-Latn-tongyong) cite.quote_title::before,
-:lang(zh-Latn-wadegile) cite.quote_title::before,
+:lang(yue) cite.quote_title::before,
 :lang(ja) cite.quote_title::before,
-:lang(ja-Latn) cite.quote_title::before, :lang(ja-Latn-hepburn) cite.quote_title::before,
-:lang(ja-Latn-hepburn-heploc) cite.quote_title::before, :lang(ja-Latn-heploc) cite.quote_title::before,
-:lang(ja-Latn-hepburn-alalc97) cite.quote_title::before, :lang(ja-Latn-alalc97) cite.quote_title::before,
 :lang(ko) cite.quote_title::before,
-:lang(ko-Latn) cite.quote_title::before,
 :lang(phi) cite.quote_title::before, :lang(fil) cite.quote_title::before,
-:lang(tbw) cite.quote_title::before, :lang(bku) cite.quote_title::before, :lang(hnn) cite.quote_title::before, :lang(tl) cite.quote_title::before,
-:lang(tbw-Tagb) cite.quote_title::before, :lang(bku-Buhd) cite.quote_title::before, :lang(hnn-Hano) cite.quote_title::before, :lang(tl-Tglg) cite.quote_title::before,
-:lang(en-PH) q.quote_work::before, :lang(en-PH-oxendict) q.quote_work::before,
-:lang(zh-Hans) q.quote_work::before,
+:lang(tbw) cite.quote_title::before, :lang(bku) cite.quote_title::before, :lang(hnn) cite.quote_title::before, :lang(tgl) cite.quote_title::before, :lang(tl) cite.quote_title::before
+{
+  content: open-quote;
+}
+:lang(en-PH) q.quote_work::before,
 :lang(zh) q.quote_work::before,
-:lang(zh-Hant) q.quote_work::before,
-:lang(zh-Hans-HK) q.quote_work::before,
-:lang(zh-Hant-HK) q.quote_work::before,
-:lang(zh-Latn) q.quote_work::before, :lang(zh-Latn-pinyin) q.quote_work::before,
-:lang(yue-jyutping) q.quote_work::before, :lang(zh-yue-jyutping) q.quote_work::before,
-:lang(zh-Latn-tongyong) q.quote_work::before,
-:lang(zh-Latn-wadegile) q.quote_work::before,
+:lang(yue) q.quote_work::before,
 :lang(ja) q.quote_work::before,
-:lang(ja-Latn) q.quote_work::before, :lang(ja-Latn-hepburn) q.quote_work::before,
-:lang(ja-Latn-hepburn-heploc) q.quote_work::before, :lang(ja-Latn-heploc) q.quote_work::before,
-:lang(ja-Latn-hepburn-alalc97) q.quote_work::before, :lang(ja-Latn-alalc97) q.quote_work::before,
 :lang(ko) q.quote_work::before,
-:lang(ko-Latn) q.quote_work::before,
 :lang(phi) q.quote_work::before, :lang(fil) q.quote_work::before,
-:lang(tbw) q.quote_work::before, :lang(bku) q.quote_work::before, :lang(hnn) q.quote_work::before, :lang(tl) q.quote_work::before,
-:lang(tbw-Tagb) q.quote_work::before, :lang(bku-Buhd) q.quote_work::before, :lang(hnn-Hano) q.quote_work::before, :lang(tl-Tglg) q.quote_work::before {
+:lang(tbw) q.quote_work::before, :lang(bku) q.quote_work::before, :lang(hnn) q.quote_work::before, :lang(tgl) q.quote_work::before, :lang(tl) q.quote_work::before
+{
   content: open-quote;
 }
 
-:lang(en-PH) cite.quote_title::after, :lang(en-PH-oxendict) cite.quote_title::after,
-:lang(zh-Hans) cite.quote_title::after,
+:lang(en-PH) cite.quote_title::after,
 :lang(zh) cite.quote_title::after,
-:lang(zh-Hant) cite.quote_title::after,
-:lang(zh-Hans-HK) cite.quote_title::after,
-:lang(zh-Hant-HK) cite.quote_title::after,
-:lang(zh-Latn) cite.quote_title::after, :lang(zh-Latn-pinyin) cite.quote_title::after,
-:lang(yue-jyutping) cite.quote_title::after, :lang(zh-yue-jyutping) cite.quote_title::after,
-:lang(zh-Latn-tongyong) cite.quote_title::after,
-:lang(zh-Latn-wadegile) cite.quote_title::after,
+:lang(yue) cite.quote_title::after,
 :lang(ja) cite.quote_title::after,
-:lang(ja-Latn) cite.quote_title::after, :lang(ja-Latn-hepburn) cite.quote_title::after,
-:lang(ja-Latn-hepburn-heploc) cite.quote_title::after, :lang(ja-Latn-heploc) cite.quote_title::after,
-:lang(ja-Latn-hepburn-alalc97) cite.quote_title::after, :lang(ja-Latn-alalc97) cite.quote_title::after,
 :lang(ko) cite.quote_title::after,
-:lang(ko-Latn) cite.quote_title::after,
 :lang(phi) cite.quote_title::after, :lang(fil) cite.quote_title::after,
-:lang(tbw) cite.quote_title::after, :lang(bku) cite.quote_title::after, :lang(hnn) cite.quote_title::after, :lang(tl) cite.quote_title::after,
-:lang(tbw-Tagb) cite.quote_title::after, :lang(bku-Buhd) cite.quote_title::after, :lang(hnn-Hano) cite.quote_title::after, :lang(tl-Tglg) cite.quote_title::after,
-:lang(en-PH) q.quote_work::after, :lang(en-PH-oxendict) q.quote_work::after,
-:lang(zh-Hans) q.quote_work::after,
+:lang(tbw) cite.quote_title::after, :lang(bku) cite.quote_title::after, :lang(hnn) cite.quote_title::after, :lang(tgl) cite.quote_title::after, :lang(tl) cite.quote_title::after
+{
+  content: close-quote;
+}
+
+:lang(en-PH) q.quote_work::after,
 :lang(zh) q.quote_work::after,
-:lang(zh-Hant) q.quote_work::after,
-:lang(zh-Hans-HK) q.quote_work::after,
-:lang(zh-Hant-HK) q.quote_work::after,
-:lang(zh-Latn) q.quote_work::after, :lang(zh-Latn-pinyin) q.quote_work::after,
-:lang(yue-jyutping) q.quote_work::after, :lang(zh-yue-jyutping) q.quote_work::after,
-:lang(zh-Latn-tongyong) q.quote_work::after,
-:lang(zh-Latn-wadegile) q.quote_work::after,
+:lang(yue) q.quote_work::after,
 :lang(ja) q.quote_work::after,
-:lang(ja-Latn) q.quote_work::after, :lang(ja-Latn-hepburn) q.quote_work::after,
-:lang(ja-Latn-hepburn-heploc) q.quote_work::after, :lang(ja-Latn-heploc) q.quote_work::after,
-:lang(ja-Latn-hepburn-alalc97) q.quote_work::after, :lang(ja-Latn-alalc97) q.quote_work::after,
 :lang(ko) q.quote_work::after,
-:lang(ko-Latn) q.quote_work::after,
 :lang(phi) q.quote_work::after, :lang(fil) q.quote_work::after,
-:lang(tbw) q.quote_work::after, :lang(bku) q.quote_work::after, :lang(hnn) q.quote_work::after, :lang(tl) q.quote_work::after,
-:lang(tbw-Tagb) q.quote_work::after, :lang(bku-Buhd) q.quote_work::after, :lang(hnn-Hano) q.quote_work::after, :lang(tl-Tglg) q.quote_work::after {
+:lang(tbw) q.quote_work::after, :lang(bku) q.quote_work::after, :lang(hnn) q.quote_work::after, :lang(tgl) q.quote_work::after, :lang(tl) q.quote_work::after
+{
   content: close-quote;
 }
