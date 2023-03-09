@@ -29,7 +29,6 @@ If you want to customise the shortcodes in this git, the advisable method is the
 
 - `{{< image >}}`
 
-- `{{< instagram >}}`
 - `{{< music >}}`
 - `{{% quotebox %}}`
 - `{{< scribd >}}`
