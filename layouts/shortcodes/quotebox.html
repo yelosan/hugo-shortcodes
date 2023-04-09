@@ -3,13 +3,23 @@
   content
 {{% /quotebox %}}
 */ -}}
-<figure class="quote_box {{ with .Get "boxstyle" }}{{ . }}{{ end }} {{ with .Get "boxcolour" }}{{ . }}{{ end }}">
-  <blockquote class="{{ with .Get "qmarkstyle" }}{{ . }}{{ end }}"{{ with .Get "srclink" }} cite="{{ . }}"{{ end }}>
+{{- $boxstyle     := .Get "boxstyle"    -}}
+{{- $boxcolour    := .Get "boxcolour"   -}}
+{{- $qmarkstyle   := .Get "qmarkstyle"  -}}
+{{- $attribalign  := .Get "attribalign" -}}
+{{- $citeby       := or (.Get "citeby")   (.Get "srctitle")   -}}
+{{- $citelink     := or (.Get "citelink") (.Get "srclink")    -}}
+{{- $citerel      := or (.Get "citerel")  (.Get "srcrel")     -}}
+{{- $pubtitle     := or (.Get "pubtitle") (.Get "attribto")   -}}
+{{- $publink      := or (.Get "publink")  (.Get "attriblink") -}}
+{{- $pubrel       := or (.Get "pubrel")   (.Get "attribrel")  -}}
+<figure class="quote_box {{ with $boxstyle }}{{ . }}{{ end }} {{ with $boxcolour }}{{ . }}{{ end }}">
+  <blockquote class="{{ with $qmarkstyle }}{{ . }}{{ end }}"{{ with $citelink }} cite="{{ . }}"{{ end }}>
     {{- .Inner | markdownify -}}
   </blockquote>
-  {{ if or ( .Get "attribto" ) ( .Get "srctitle" ) }}
-  <figcaption class="attribution_name {{ with .Get "attribalign" }}{{ . }}{{ end }}">
-    <p><cite>{{ if .Get "srclink" }}<a href="{{ .Get "srclink" }}" rel="dct:title {{ with .Get "srcrel" }}{{ . }}{{ end }}" referrerpolicy="strict-origin-when-cross-origin">{{ end }}{{ with .Get "srctitle" }}{{ . | markdownify }}{{ end }}{{ if .Get "srclink" }}</a>{{ end }}</cite>{{ if .Get "attribto" }}{{ i18n "quote_src" }} {{ if .Get "attriblink" }}<a href="{{ .Get "attriblink" }}" rel="dct:creator {{ with .Get "attribrel" }}{{ . }}{{ end }}" referrerpolicy="strict-origin-when-cross-origin">{{ end }}{{ .Get "attribto" | markdownify }}{{ if .Get "attriblink" }}</a>{{ end }}{{ end }}</p>
+  {{ with or $pubtitle $citeby }}
+  <figcaption class="attribution_name {{ with $attribalign }}{{ . }}{{ end }}">
+    <p><cite>{{ with $citelink }}<a href="{{ . }}" rel="dct:title {{ with $citerel }}{{ . }}{{ end }}" referrerpolicy="strict-origin-when-cross-origin">{{ end }}{{ with $citeby }}{{ . | markdownify }}{{ end }}{{ with $citelink }}</a>{{ end }}{{ with and $citeby $pubtitle }}{{ i18n "quote_src" }} {{ end }}</cite>{{ with $pubtitle }}{{ with $publink }}<a href="{{ . }}" rel="dct:creator {{ with $pubrel }}{{ . }}{{ end }}" referrerpolicy="strict-origin-when-cross-origin">{{ end }}{{ . | markdownify }}{{ with $publink }}</a>{{ end }}{{ end }}</p>
   </figcaption>
   {{ end }}
 </figure>
