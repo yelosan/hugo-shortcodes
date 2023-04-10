@@ -1,7 +1,13 @@
 {{- /* HOW TO USE
-{{% quotebox boxstyle="qbs_generic" qmarkstyle="qbm_doublequotationmark" boxcolour="qbc_blue" attribalign="txt_right" srctitle="" srclink="" srcrel="noopener external" attribto="" attriblink="" attribrel="noopener external" %}}
-  content
+{{% quotebox boxstyle="qbs_generic" qmarkstyle="qbm_doublequotationmark" boxcolour="qbc_blue" attribalign="txt_right" citeby="" citelink="" citerel="noopener external" pubtitle="" publink="" pubrel="noopener external" %}}
+content
 {{% /quotebox %}}
+*/ -}}
+{{- /* Changelog:
+  1. To avoid confusion:
+    * replaced src prefix with cite
+    * replaced attrib prefix with pub
+  2. converted to $var
 */ -}}
 {{- $boxstyle     := .Get "boxstyle"    -}}
 {{- $boxcolour    := .Get "boxcolour"   -}}
