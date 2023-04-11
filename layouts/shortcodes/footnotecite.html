@@ -1,9 +1,0 @@
-{{- /* HOW TO USE
-{{% footnotecite id="" sourceurl="" sourcetitle="" %}}
-*/ -}}
-{{- $id := .Get "id" -}}
-{{- $sourceurl := .Get "sourceurl" -}}
-{{- $sourcetitle := .Get "sourcetitle" -}}
-<li id="fn:{{ $id }}" role="doc-endnote">
-  <p>{{ .Inner }}&nbsp;<a href="#fnref:{{ $id }}" class="footnote-backref" role="doc-backlink">↩︎</a></p>
-</li>
