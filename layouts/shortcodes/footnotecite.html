@@ -5,5 +5,5 @@
 {{- $sourceurl := .Get "sourceurl" -}}
 {{- $sourcetitle := .Get "sourcetitle" -}}
 <li id="fn:{{ $id }}" role="doc-endnote">
-  <p>{{ .Inner | markdownify }}&nbsp;<a href="#fnref:{{ $id }}" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+  <p>{{ .Inner }}&nbsp;<a href="#fnref:{{ $id }}" class="footnote-backref" role="doc-backlink">↩︎</a></p>
 </li>

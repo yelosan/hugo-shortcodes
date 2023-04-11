@@ -21,7 +21,7 @@ content
 {{- $pubrel       := or (.Get "pubrel")   (.Get "attribrel")  -}}
 <figure class="quote_box {{ with $boxstyle }}{{ . }}{{ end }} {{ with $boxcolour }}{{ . }}{{ end }}">
   <blockquote class="{{ with $qmarkstyle }}{{ . }}{{ end }}"{{ with $citelink }} cite="{{ . }}"{{ end }}>
-    {{- .Inner | markdownify -}}
+    {{ .Inner }}
   </blockquote>
   {{ with or $pubtitle $citeby }}
   <figcaption class="attribution_name {{ with $attribalign }}{{ . }}{{ end }}">

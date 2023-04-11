@@ -27,7 +27,7 @@ OR
 
 <figure class="quote_box {{ with .Get "boxstyle" }}{{ . }}{{ end }} {{ with .Get "qmarkstyle" }}{{ . }}{{ end }} {{ with .Get "boxcolour" }}{{ . }}{{ end }}">
   <div{{ with .Get "srclink" }} cite="{{ . }}"{{ end }}>
-    {{ .Inner | markdownify }}
+    {{ .Inner }}
   </div>
   {{ if or ( .Get "attribto" ) ( .Get "srctitle" ) }}
   <figcaption class="attribution_name {{ with .Get "attribalign" }}{{ . }}{{ end }}">

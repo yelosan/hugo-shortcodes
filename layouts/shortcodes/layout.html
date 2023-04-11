@@ -24,4 +24,4 @@
 */ -}}
 {{- $type := .Get "type" -}}
 {{- $style := .Get "style" | safeCSS -}}
-<div class="yelosan---{{ $type }}"{{ with $style }} style="{{ . }}"{{ end }}>{{- .InnerDeindent -}}</div>
+<div class="yelosan---{{ $type }}"{{ with $style }} style="{{ . }}"{{ end }}>{{ .InnerDeindent }}</div>
