@@ -1,5 +1,5 @@
 {{ $type := .Get "type" }}
-<h2>{{ $type | humanize }}</h2>
+<b>{{ $type | humanize }}</b>
 {{ with .Get "message" }}{{ . | safeHTML }}{{ end }}
 <div id="send_a_gift" class="gift">
   <ul>
