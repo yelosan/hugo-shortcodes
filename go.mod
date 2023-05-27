@@ -1,3 +1,3 @@
 module codeberg.org/yelosan/hugo-shortcodes
 
-go 1.19
+go 1.20
