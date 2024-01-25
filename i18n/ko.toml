@@ -2,24 +2,32 @@
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
 # BGN: Date and Time Formats
+  [datetimeformat]
+    other = "2006-01-02 15:04 MST"
+  [datetimenative]
+    other = "2006년 01월 02일 오전 15시 04분 05초"
   [datetimelongtzd]
-    other = "2006년 01월 02일 15시 04분 05초 -0700"
+    other = "2006-01-02 15:04:05 Z07:00"
   [datetimelongtzn]
-    other = "2006년 01월 02일 15시 04분 05초 MST"
+    other = "2006-01-02 15:04:05 MST"
   [datetimetzd]
-    other = "2006년 01월 02일 15시 04분 -0700"
+    other = "2006-01-02 15:04 Z07:00"
   [datetimetzn]
-    other = "2006년 01월 02일 15시 04분 MST"
+    other = "2006-01-02 15:04 MST"
+  [datetimeonly]
+    other = "2006-01-02 15:04"
   [dateonly]
-    other = "2006년 01월 02일"
+    other = "2006-01-02"
   [timelongtzd]
-    other = "15시 04분 05초 -0700"
+    other = "15:04:05 Z07:00"
   [timelongtzn]
-    other = "15시 04분 05초 MST"
+    other = "15:04:05 MST"
   [timetzd]
-    other = "15시 04분 -0700"
+    other = "15:04 Z07:00"
   [timetzn]
-    other = "15시 04분 MST"
+    other = "15:04 MST"
+  [timeonly]
+    other = "15:04"
 # END: Date and Time Formats
 
 # BGN: attribution and license
