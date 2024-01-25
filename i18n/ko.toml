@@ -3,7 +3,7 @@
 
 # BGN: Date and Time Formats
   [datetimeformat]
-    other = "2006-01-02 15:04 MST"
+    other = "2006-01-02 15:04"
   [datetimenative]
     other = "2006년 01월 02일 오전 15시 04분 05초"
   [datetimelongtzd]
