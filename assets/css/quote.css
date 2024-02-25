@@ -32,29 +32,29 @@
   }
 
   /* CHINESE */
-  :lang(zh) cite.quote_title,
-  :lang(yue) cite.quote_title
-  {
-    /* quotes: "《" "》" "〈" "〉"; */
-    quotes: "\300A" "\300B" "\3008" "\3009";
-    font-style: normal;
-  }
+    :lang(zh) cite.quote_title,
+    :lang(yue) cite.quote_title
+    {
+      /* quotes: "《" "》" "〈" "〉"; */
+      quotes: "\300A" "\300B" "\3008" "\3009";
+      font-style: normal;
+    }
 
   /* JAPANESE */
-  :lang(ja) cite.quote_title
-  {
-    /* quotes: "《" "》" "〈" "〉"; */
-    quotes: "\300A" "\300B" "\3008" "\3009";
-    font-style: normal;
-  }
+    :lang(ja) cite.quote_title
+    {
+      /* quotes: "《" "》" "〈" "〉"; */
+      quotes: "\300A" "\300B" "\3008" "\3009";
+      font-style: normal;
+    }
 
   /* KOREAN */
-  :lang(ko) cite.quote_title
-  {
-    /* quotes: "《" "》" "〈" "〉"; */
-    quotes: "\300A" "\300B" "\3008" "\3009";
-    font-style: normal;
-  }
+    :lang(ko) cite.quote_title
+    {
+      /* quotes: "《" "》" "〈" "〉"; */
+      quotes: "\300A" "\300B" "\3008" "\3009";
+      font-style: normal;
+    }
 /*********************
 ** END: quote_title **
 *********************/
@@ -75,29 +75,29 @@
   }
 
   /* CHINESE */
-  :lang(zh) q.quote_work,
-  :lang(yue) q.quote_work
-  {
-    /* quotes: "「" "」" "『" "』"; */
-    quotes: "\300C" "\300D" "\300E" "\300F";
-    font-style: normal;
-  }
+    :lang(zh) q.quote_work,
+    :lang(yue) q.quote_work
+    {
+      /* quotes: "「" "」" "『" "』"; */
+      quotes: "\300C" "\300D" "\300E" "\300F";
+      font-style: normal;
+    }
 
   /* JAPANESE */
-  :lang(ja) q.quote_work
-  {
-    /* quotes: "「" "」" "『" "』"; */
-    quotes: "\300C" "\300D" "\300E" "\300F";
-    font-style: normal;
-  }
+    :lang(ja) q.quote_work
+    {
+      /* quotes: "「" "」" "『" "』"; */
+      quotes: "\300C" "\300D" "\300E" "\300F";
+      font-style: normal;
+    }
 
   /* KOREAN */
-  :lang(ko) q.quote_work
-  {
-    /* quotes: "「" "」" "『" "』"; */
-    quotes: "\300C" "\300D" "\300E" "\300F";
-    font-style: normal;
-  }
+    :lang(ko) q.quote_work
+    {
+      /* quotes: "「" "」" "『" "』"; */
+      quotes: "\300C" "\300D" "\300E" "\300F";
+      font-style: normal;
+    }
 /********************
 ** END: quote_work **
 ********************/
