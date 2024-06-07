@@ -1,0 +1,18 @@
+/***************
+** BGN: Lists **
+***************/
+  dl {
+    counter-reset: dl-dd;
+  }
+  dt + dd::before {
+    counter-set: dl-dd 1;
+    counter-increment: dl-dd;
+    content: "(" counter(dl-dd) ") ";
+  }
+  dd + dd::before {
+    counter-increment: dl-dd;
+    content: "(" counter(dl-dd) ") ";
+  }
+/***************
+** END: Lists **
+***************/

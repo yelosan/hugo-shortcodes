@@ -1,0 +1,13 @@
+{{- /* HOW TO USE
+  {{% dl id="" class="" %}}
+    {{< dt id="" class="" >}}{{< /dt >}}
+    {{< dd id="" class="" >}}
+    {{< /dd >}}
+  {{% /dl %}}
+*/ -}}
+{{- $id := .Get "id" }}
+{{- $class := .Get "class" }}
+<dt{{ with $id }} id="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }}>
+
+{{ .InnerDeindent }}
+</dt>
