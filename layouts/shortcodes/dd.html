@@ -1,13 +1,15 @@
 {{- /* HOW TO USE
   {{% dl id="" class="" %}}
-    {{< dt id="" class="" >}}{{< /dt >}}
+    {{< dt id="" class="" dfn=true >}}{{< /dt >}}
     {{< dd id="" class="" >}}
     {{< /dd >}}
   {{% /dl %}}
 */ -}}
 {{- $id := .Get "id" }}
 {{- $class := .Get "class" }}
+{{- $dfn := .Parent.Get "dfn" }}
 <dd{{ with $id }} id="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }}>
+{{ if eq $dfn true }}<div role="definition" style="display: inline flow">{{ end }}
 
-{{ .InnerDeindent }}
+{{ .InnerDeindent }}{{ if eq $dfn true }}</div>{{ end }}
 </dd>

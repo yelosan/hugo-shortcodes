@@ -1,13 +1,13 @@
 {{- /* HOW TO USE
   {{% dl id="" class="" %}}
-    {{< dt id="" class="" >}}{{< /dt >}}
+    {{< dt id="" class="" dfn=true >}}{{< /dt >}}
     {{< dd id="" class="" >}}
     {{< /dd >}}
   {{% /dl %}}
 */ -}}
 {{- $id := .Get "id" }}
 {{- $class := .Get "class" }}
-<dl{{ with $id }} id="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }}>
+<dl role="list"{{ with $id }} id="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }}>
 
 {{ .InnerDeindent }}
 </dl>

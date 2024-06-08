@@ -1,13 +1,15 @@
 {{- /* HOW TO USE
   {{% dl id="" class="" %}}
-    {{< dt id="" class="" >}}{{< /dt >}}
+    {{< dt id="" class="" dfn=true >}}{{< /dt >}}
     {{< dd id="" class="" >}}
     {{< /dd >}}
   {{% /dl %}}
 */ -}}
 {{- $id := .Get "id" }}
 {{- $class := .Get "class" }}
-<dt{{ with $id }} id="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }}>
+{{- $dfn := .Parent.Get "dfn" }}
+<dt role="listitem"{{ with $id }} id="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }}>
+{{ if eq $dfn true }}<dfn role="term">{{ end }}
 
-{{ .InnerDeindent }}
+{{ .InnerDeindent }}{{ if eq $dfn true }}</dfn>{{ end }}
 </dt>
