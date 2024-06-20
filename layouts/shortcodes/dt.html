@@ -11,5 +11,5 @@
 <dt role="listitem"{{ with $id }} id="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }}>
 {{ if eq $dfn true }}<dfn role="term">{{ end }}
 
-{{ .InnerDeindent }}{{ if eq $dfn true }}</dfn>{{ end }}
+{{ .Inner }}{{ if eq $dfn true }}</dfn>{{ end }}
 </dt>

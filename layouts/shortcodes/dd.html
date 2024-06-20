@@ -11,5 +11,5 @@
 <dd{{ with $id }} id="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }}>
 {{ if eq $dfn true }}<div role="definition" style="display: inline flow">{{ end }}
 
-{{ .InnerDeindent }}{{ if eq $dfn true }}</div>{{ end }}
+{{ .Inner }}{{ if eq $dfn true }}</div>{{ end }}
 </dd>
