@@ -11,17 +11,20 @@
 {{- /*
   Required child shortcode:
     layoutitem
-*/ -}}
+*/}}
 {{- /* HOW TO
   {{% layout type="" %}}
-    {{% layoutitem style="" %}}
+    {{< layoutitem style="" >}}
       CONTENT
-    {{% /layoutitem %}}
+    {{< /layoutitem >}}
     {{< layoutitem style="" >}}
       CONTENT
     {{< /layoutitem >}}
   {{% /layout %}}
-*/ -}}
-{{- $type := .Get "type" -}}
-{{- $style := .Get "style" | safeCSS -}}
-<div class="yelosan---{{ $type }}"{{ with $style }} style="{{ . }}"{{ end }}>{{ .InnerDeindent }}</div>
+*/}}
+{{- $type := .Get "type" }}
+{{- $style := .Get "style" | safeCSS }}
+<div class="yelosan---{{ $type }}"{{ with $style }} style="{{ . }}"{{ end }}>
+
+{{ .Inner }}
+</div>

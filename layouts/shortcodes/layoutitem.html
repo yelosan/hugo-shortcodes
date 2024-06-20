@@ -7,26 +7,29 @@
 
   TODO:
     - Grid
-*/ -}}
+*/}}
 {{- /*
   Required Parent shortcode:
     layout
-*/ -}}
+*/}}
 {{- /* HOW TO
   {{% layout type="" %}}
-    {{% layoutitem style="" %}}
+    {{< layoutitem style="" >}}
       CONTENT
-    {{% /layoutitem %}}
+    {{< /layoutitem >}}
     {{< layoutitem style"" >}}
       CONTENT
     {{< /layoutitem >}}
   {{% /layout %}}
-*/ -}}
-{{- $style := .Get "style" | safeCSS -}}
-{{- $inner := .InnerDeindent -}}
+*/}}
+{{- $style := .Get "style" | safeCSS }}
+{{- $inner := .Inner }}
 {{ with .Parent }}
   {{- $type := .Get "type" -}}
-  <div class="yelosan---{{ $type }}__content"{{ with $style }} style="{{ . }}"{{ end }}>{{- $inner -}}</div>
+  <div class="yelosan---{{ $type }}__content"{{ with $style }} style="{{ . }}"{{ end }}>
+
+{{- $inner -}}
+</div>
 {{ else }}
   <p>ERROR: This shortcode requires the layout shortcode.</p>
 {{ end }}
