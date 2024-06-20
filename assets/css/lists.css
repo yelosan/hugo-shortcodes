@@ -13,6 +13,9 @@
     counter-increment: dl-dd;
     content: "(" counter(dl-dd) ") ";
   }
+  dt::after {
+    content: "";
+  }
 /***************
 ** END: Lists **
 ***************/
