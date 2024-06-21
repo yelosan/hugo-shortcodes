@@ -5,9 +5,9 @@
     {{< /dd >}}
   {{% /dl %}}
 */ -}}
-{{- $id := .Get "id" }}
-{{- $class := .Get "class" }}
-{{- $dfn := .Parent.Get "dfn" }}
+{{- $id := .Get "id" -}}
+{{- $class := .Get "class" -}}
+{{- $dfn := .Parent.Get "dfn" -}}
 <dd{{ with $id }} id="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }}>
 {{ if eq $dfn true }}<div role="definition" style="display: inline flow">{{ end }}
 

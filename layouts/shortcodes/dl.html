@@ -5,8 +5,8 @@
     {{< /dd >}}
   {{% /dl %}}
 */ -}}
-{{- $id := .Get "id" }}
-{{- $class := .Get "class" }}
+{{- $id := .Get "id" -}}
+{{- $class := .Get "class" -}}
 <dl role="list"{{ with $id }} id="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }}>
 
 {{ .Inner }}

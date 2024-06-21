@@ -5,9 +5,9 @@
     {{< /dd >}}
   {{% /dl %}}
 */ -}}
-{{- $id := .Get "id" }}
-{{- $class := .Get "class" }}
-{{- $dfn := .Parent.Get "dfn" }}
+{{- $id := .Get "id" -}}
+{{- $class := .Get "class" -}}
+{{- $dfn := .Parent.Get "dfn" -}}
 <dt role="listitem"{{ with $id }} id="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }}>
 {{ if eq $dfn true }}<dfn role="term">{{ end }}
 
