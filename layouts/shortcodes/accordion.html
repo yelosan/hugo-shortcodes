@@ -1,16 +1,19 @@
 {{- /* HOW TO USE
-  {{% accordion summary="" status="open" border="style01" class="faq" id="" %}}
-  content
-  {{% /accordion %}}
+{{% accordion summary="" status="open" border="style01" class="faq" id="" %}}
+content
+{{% /accordion %}}
 */ -}}
-{{- $status := .Get "status" }}
-{{- $border := .Get "border" }}
-{{- $summary := .Get "summary" }}
-{{- $content := .Inner }} {{/* We cannot use .InnderDelimit because it will affect markdown lists. */}}
-{{- $class := .Get "class" }}
-{{- $id := .Get "id" }}
+{{- /* NOTE:
+  1. $content is inside a DIV to allow separate styling of $summary and $content.
+  2. Do not use .InnerDeindent as it will affect markdown lists.
+*/ -}}
+{{- $status := .Get "status" -}}
+{{- $border := .Get "border" -}}
+{{- $summary := .Get "summary" -}}
+{{- $content := .Inner -}}
+{{- $class := .Get "class" -}}
+{{- $id := .Get "id" -}}
 <details{{ with $summary }} id="{{ or $id . | urlize }}"{{ end }}{{ with $border }} class="{{ . }}"{{ end }}{{ with eq $status "open" }} open{{ end }}>
-{{- /* NOTE: $content is inside a DIV to allow separate styling of $summary and $content. */}}
-{{- with $summary }}<summary{{ with $class }} class="{{ . }}"{{ end }}>{{ . | $.Page.RenderString }}</summary>{{ else }}{{ warnf "Missing summary in %s" .Position }}{{- end }}
-{{- with $content }}<div{{ with $class }} class="{{ . }}"{{ end }}>{{ . }}</div>{{ else }}{{ warnf "Missing content in %s" .Position }}{{- end }}
+{{ with $summary }}<summary{{ with $class }} class="{{ . }}"{{ end }}>{{ . | $.Page.RenderString }}</summary>{{ else }}{{ warnf "Missing summary in %s" .Position }}{{ end }}
+{{ with $content }}<div{{ with $class }} class="{{ . }}"{{ end }}>{{ . }}</div>{{ else }}{{ warnf "Missing content in %s" .Position }}{{ end }}
 </details>
