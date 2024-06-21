@@ -2,37 +2,31 @@
 {{% quote type="name|title|work" lang="" %}}content{{% /quote %}}
 */ -}}
 {{- /* NOTE:
-  quote_name: channel names, TV network name, brand/company names, author names, band names, singer names, actor names, character names, protocol names
+  1. This is used inline, any markdown should be added outside this shortcode.
+
+  2. quote_name: channel names, TV network name, brand/company names, author names, band names, singer names, actor names, character names, protocol names
     - first letter always capitalised
 
-  quote_title: albums, movies, televisions, radio shows, books, periodicals, databases, websites, service names, software names
+  3. quote_title: albums, movies, televisions, radio shows, books, periodicals, databases, websites, service names, software names
     - in old print: underline
     - in English: italicized
     - Asian romanisation: « … ‹ … › … »
     - Chinese: 《…〈…〉…》
     - Japanese: 《…〈…〉…》
 
-  quote_work: episode, articles, essays, chapters, poems, songs, speeches, mottos, ordinary quotations, release tags/titles/names
+  4. quote_work: episode, articles, essays, chapters, poems, songs, speeches, mottos, ordinary quotations, release tags/titles/names
     - English: “ … ‘ … ’ … ”
     - Chinese: 「…『…』…」
     - Japanese: 「…『…』…」
     - South Korean (usually for vertical only): 「…『…』…」
-*/}}
-{{- $type := .Get "type" }}
-{{- $lang := .Get "lang" }}
-{{- if eq $type "name" }}
-  <span class="quote_name" translate="no"><bdi{{ with $lang }} lang="{{ . }}"{{ end }}>
-
-{{ .Inner }}
-</bdi></span>
-{{- else if eq $type "title" }}
-  <cite class="quote_title" translate="no"><bdi{{ with $lang }} lang="{{ . }}"{{ end }}>
-
-{{ .Inner }}
-</bdi></cite>
-{{- else if eq $type "work" }}
-  <q class="quote_work" translate="no"><bdi{{ with $lang }} lang="{{ . }}"{{ end }}>
-
-{{ .Inner }}
-</bdi></q>
-{{- end }}
+*/ -}}
+{{- $type := .Get "type" -}}
+{{- $lang := .Get "lang" -}}
+{{- $content := .Inner -}}
+{{- if eq $type "name" -}}
+<span class="quote_name" translate="no"><bdi{{ with $lang }} lang="{{ . }}"{{ end }}>{{ $content }}</bdi></span>
+{{- else if eq $type "title" -}}
+<cite class="quote_title" translate="no"><bdi{{ with $lang }} lang="{{ . }}"{{ end }}>{{ $content }}</bdi></cite>
+{{- else if eq $type "work" -}}
+<q class="quote_work" translate="no"><bdi{{ with $lang }} lang="{{ . }}"{{ end }}>{{ $content }}</bdi></q>
+{{- end -}}
