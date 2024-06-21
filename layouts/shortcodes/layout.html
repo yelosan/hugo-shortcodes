@@ -11,7 +11,7 @@
 {{- /*
   Required child shortcode:
     layoutitem
-*/}}
+*/ -}}
 {{- /* HOW TO
   {{% layout type="" %}}
     {{< layoutitem style="" >}}
@@ -21,9 +21,9 @@
       CONTENT
     {{< /layoutitem >}}
   {{% /layout %}}
-*/}}
-{{- $type := .Get "type" }}
-{{- $style := .Get "style" | safeCSS }}
+*/ -}}
+{{- $type := .Get "type" -}}
+{{- $style := .Get "style" | safeCSS -}}
 <div class="yelosan---{{ $type }}"{{ with $style }} style="{{ . }}"{{ end }}>
 
 {{ .Inner }}

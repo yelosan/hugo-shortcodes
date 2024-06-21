@@ -1,38 +1,36 @@
 {{- /* HOW TO USE
-
-{{% sembox boxstyle="qbs_generic" qmarkstyle="qbm_doublequotationmark" boxcolour="qbc_blue" attribalign="txt_right" srctitle="" srclink="" srcrel="noopener external" attribto="" attriblink="" attribrel="noopener external" %}}
-  content
-{{% /sembox %}}
+  {{% sembox boxstyle="qbs_generic" qmarkstyle="qbm_doublequotationmark" boxcolour="qbc_blue" attribalign="txt_right" srctitle="" srclink="" srcrel="noopener external" attribto="" attriblink="" attribrel="noopener external" %}}
+    content
+  {{% /sembox %}}
 
 OR
 
-{{% sembox
-  boxstyle="qbs_generic"
-  qmarkstyle="qbm_doublequotationmark"
-  boxcolour="qbc_blue"
-  attribalign="txt_right"
+  {{% sembox
+    boxstyle="qbs_generic"
+    qmarkstyle="qbm_doublequotationmark"
+    boxcolour="qbc_blue"
+    attribalign="txt_right"
 
-  srctitle=""
-  srclink=""
-  srcrel="noopener external"
+    srctitle=""
+    srclink=""
+    srcrel="noopener external"
 
-  attribto=""
-  attriblink=""
-  attribrel="noopener external"
-%}}
+    attribto=""
+    attriblink=""
+    attribrel="noopener external"
+  %}}
   CONTENT_HERE
-{{% /sembox %}}
-
-*/}}
+  {{% /sembox %}}
+*/ -}}
 
 <figure class="quote_box {{ with .Get "boxstyle" }}{{ . }}{{ end }} {{ with .Get "qmarkstyle" }}{{ . }}{{ end }} {{ with .Get "boxcolour" }}{{ . }}{{ end }}">
-  <div{{ with .Get "srclink" }} cite="{{ . }}"{{ end }}>
+<div{{ with .Get "srclink" }} cite="{{ . }}"{{ end }}>
 
 {{ .Inner }}
-  </div>
-  {{ if or ( .Get "attribto" ) ( .Get "srctitle" ) }}
-  <figcaption class="attribution_name {{ with .Get "attribalign" }}{{ . }}{{ end }}">
-    <p><cite>{{ if .Get "srclink" }}<a href="{{ .Get "srclink" }}" rel="dct:title {{ with .Get "srcrel" }}{{ . }}{{ end }}" referrerpolicy="strict-origin-when-cross-origin">{{ end }}{{ with .Get "srctitle" }}{{ . | markdownify }}{{ end }}{{ if .Get "srclink" }}</a>{{ end }}</cite>{{ if .Get "attribto" }}{{ i18n "quote_src" }} {{ if .Get "attriblink" }}<a href="{{ .Get "attriblink" }}" rel="dct:creator {{ with .Get "attribrel" }}{{ . }}{{ end }}" referrerpolicy="strict-origin-when-cross-origin">{{ end }}{{ .Get "attribto" | markdownify }}{{ if .Get "attriblink" }}</a>{{ end }}{{ end }}</p>
-  </figcaption>
-  {{ end }}
+</div>
+{{- if or ( .Get "attribto" ) ( .Get "srctitle" ) -}}
+<figcaption class="attribution_name {{ with .Get "attribalign" }}{{ . }}{{ end }}">
+<p><cite>{{ if .Get "srclink" }}<a href="{{ .Get "srclink" }}" rel="dct:title {{ with .Get "srcrel" }}{{ . }}{{ end }}" referrerpolicy="strict-origin-when-cross-origin">{{ end }}{{ with .Get "srctitle" }}{{ . | markdownify }}{{ end }}{{ if .Get "srclink" }}</a>{{ end }}</cite>{{ if .Get "attribto" }}{{ i18n "quote_src" }} {{ if .Get "attriblink" }}<a href="{{ .Get "attriblink" }}" rel="dct:creator {{ with .Get "attribrel" }}{{ . }}{{ end }}" referrerpolicy="strict-origin-when-cross-origin">{{ end }}{{ .Get "attribto" | markdownify }}{{ if .Get "attriblink" }}</a>{{ end }}{{ end }}</p>
+</figcaption>
+{{- end -}}
 </figure>
