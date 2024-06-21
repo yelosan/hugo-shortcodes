@@ -1,16 +1,15 @@
 {{- /* HOW TO USE
+  {{< scribd
+    doctitle=""
+    docid=""
+    startpage="1"
+    viewmode="slideshow OR scroll"
+    docrel="noopener external"
 
-{{< scribd
-  doctitle=""
-  docid=""
-  startpage="1"
-  viewmode="slideshow OR scroll"
-  docrel="noopener external"
-
-  authorname=""
-  authorid=""
-  authorrel="noopener external"
->}}
+    authorname=""
+    authorid=""
+    authorrel="noopener external"
+  >}}
 
   * docid can be found in the scribd's URL
     - example: https://www.scribd.com/document/455221025/Feast-of-Passover
@@ -21,14 +20,11 @@
     - example: https://www.scribd.com/user/14631/Yahuhanan-Yukia-Sese-Cuneta
     - authorid is 14631
     - docid is better than URL because [1] it is a fixed identifier
-
 */ -}}
-
 <div class="figure_box">
   <div class="responsive_embedframe">
     <iframe anonymous class="scribd_iframe_embed" title="{{ with .Get "doctitle" }}{{ . | plainify }}{{ end }}" src="https://www.scribd.com/embeds/{{ with .Get "docid" }}{{ . }}{{ end }}/content?start_page={{ with .Get "startpage" }}{{ . }}{{ end }}&view_mode={{ with .Get "viewmode" }}{{ . }}{{ end }}" data-auto-height="true" scrolling="no" sandbox="allow-same-origin allow-scripts" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe>
   </div>
-
   <footer class="attribution_caption txt_center">
     <small><a title="View {{ with .Get "doctitle" }}{{ . | plainify }}{{ end }} on Scribd" href="https://www.scribd.com/document/{{ with .Get "docid" }}{{ . }}{{ end }}#from_embed" rel="{{ with .Get "docrel" }}{{ . }}{{ end }}" referrerpolicy="strict-origin-when-cross-origin">{{ with .Get "doctitle" }}{{ . | markdownify }}{{ end }}</a> by <a title="View {{ with .Get "authorname" }}{{ . | plainify }}{{ end }}'s profile on Scribd" href="https://www.scribd.com/user/{{ with .Get "authorid" }}{{ . }}{{ end }}#from_embed" rel="{{ with .Get "authorrel" }}{{ . }}{{ end }}" referrerpolicy="strict-origin-when-cross-origin">{{ with .Get "authorname" }}{{ . | markdownify }}{{ end }}</a></small>
   </footer>
